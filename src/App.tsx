@@ -22,11 +22,10 @@ export default function App() {
             <span className="font-bold text-slate-800 hidden sm:block">صحتنا في غذائنا</span>
           </div>
           
-          <div className="flex items-center gap-6 text-sm font-bold text-slate-600">
-            <a href="#details" className="hover:text-brand-primary transition-colors">مسببات الحساسية</a>
-            <a href="#quiz" className="hover:text-brand-primary transition-colors">اختبر نفسك</a>
-            <a href="#journal" className="hover:text-brand-primary transition-colors">المفكرة</a>
-            <a href="#game" className="bg-brand-primary px-4 py-2 rounded-xl text-white hover:bg-brand-primary/90 transition-all">العب الآن</a>
+          <div className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm font-bold text-slate-600">
+            <a href="#details" className="hover:text-brand-primary transition-colors whitespace-nowrap">مسببات الحساسية</a>
+            <a href="#quiz" className="hover:text-brand-primary transition-colors hidden xs:block">اختبر نفسك</a>
+            <a href="#game" className="bg-brand-primary px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-white hover:bg-brand-primary/90 transition-all text-xs sm:text-sm">العب</a>
           </div>
         </div>
       </nav>

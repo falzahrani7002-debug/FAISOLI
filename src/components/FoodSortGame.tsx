@@ -68,27 +68,27 @@ export default function FoodSortGame() {
                 initial={{ scale: 0.8, opacity: 0, rotate: -10 }}
                 animate={{ scale: 1, opacity: 1, rotate: 0 }}
                 exit={{ x: 200, opacity: 0, rotate: 20 }}
-                className="bg-white p-12 rounded-[3.5rem] shadow-2xl mb-12 border-b-8 border-slate-100 flex flex-col items-center"
+                className="bg-white p-8 sm:p-12 rounded-[2.5rem] sm:rounded-[3.5rem] shadow-2xl mb-8 sm:mb-12 border-b-8 border-slate-100 flex flex-col items-center"
               >
-                <div className="text-9xl mb-8 select-none">{currentFood.icon}</div>
-                <h3 className="text-4xl font-black text-slate-800">{currentFood.name}</h3>
+                <div className="text-7xl sm:text-9xl mb-6 sm:mb-8 select-none">{currentFood.icon}</div>
+                <h3 className="text-3xl sm:text-4xl font-black text-slate-800">{currentFood.name}</h3>
               </motion.div>
             </AnimatePresence>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <button
                 onClick={() => handleDecision(true)}
-                className="p-6 bg-brand-danger text-white rounded-3xl font-bold flex flex-col items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-brand-danger/20"
+                className="p-4 sm:p-6 bg-brand-danger text-white rounded-3xl font-bold flex flex-col items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-brand-danger/20"
               >
-                <AlertTriangle size={32} />
-                <span>يسبب حساسية</span>
+                <AlertTriangle className="w-6 h-6 sm:w-8 sm:h-8" />
+                <span className="text-sm sm:text-base">يسبب حساسية</span>
               </button>
               <button
                 onClick={() => handleDecision(false)}
-                className="p-6 bg-brand-secondary text-white rounded-3xl font-bold flex flex-col items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-brand-secondary/20"
+                className="p-4 sm:p-6 bg-brand-secondary text-white rounded-3xl font-bold flex flex-col items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-brand-secondary/20"
               >
-                <CheckCircle2 size={32} />
-                <span>طعام آمن</span>
+                <CheckCircle2 className="w-6 h-6 sm:w-8 sm:h-8" />
+                <span className="text-sm sm:text-base">طعام آمن</span>
               </button>
             </div>
             

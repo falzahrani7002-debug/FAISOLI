@@ -16,13 +16,13 @@ export default function AllergyDetails() {
         <p className="text-slate-600">اختر طعاماً لتعرف أكثر عنه وكيف تتجنبه بذكاء!</p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 mb-12">
+      <div className="flex overflow-x-auto pb-4 md:pb-0 md:flex-wrap justify-start md:justify-center gap-4 mb-12 scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
         {ALLERGY_DETAILS.map((allergy) => (
           <button
             key={allergy.id}
             onClick={() => setSelectedId(allergy.id)}
             className={cn(
-              "flex items-center gap-3 px-6 py-3 rounded-2xl font-bold transition-all border-2",
+              "flex items-center gap-3 px-6 py-3 rounded-2xl font-bold transition-all border-2 shrink-0 md:shrink",
               selectedId === allergy.id 
                 ? "bg-brand-primary text-white border-brand-primary shadow-lg scale-105" 
                 : "bg-white text-slate-600 border-slate-100 hover:border-brand-primary/30"

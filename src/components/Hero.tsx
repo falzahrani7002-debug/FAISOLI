@@ -23,10 +23,10 @@ export default function Hero() {
           <span className="inline-block px-4 py-1 rounded-full bg-brand-primary/20 text-brand-primary font-bold text-sm mb-4">
             دليلك الذكي للحياة الصحية
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-slate-800 leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-slate-800 leading-tight mb-6">
             صحتنا في <span className="text-brand-primary">غذائنا</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
             مرحباً بك يا بطل! هل تساءلت يوماً لماذا قد يشعر البعض بالتعب بعد تناول طعام معين؟ 
             تعال معنا في رحلة سريعة لنكتشف سر "الحساسية الغذائية"!
           </p>

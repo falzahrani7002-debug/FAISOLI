@@ -37,3 +37,19 @@
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .xs\:block {
+    @media (min-width: 400px) {
+      display: block;
+    }
+  }
+}
