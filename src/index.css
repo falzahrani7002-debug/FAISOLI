@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  
+  --color-brand-primary: #3b82f6;
+  --color-brand-secondary: #10b981;
+  --color-brand-accent: #f59e0b;
+  --color-brand-danger: #ef4444;
+}
+
+@layer base {
+  html {
+    @apply antialiased scroll-smooth;
+    direction: rtl;
+  }
+  
+  body {
+    @apply bg-cyan-50 text-slate-900;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}

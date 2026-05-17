@@ -1,0 +1,8 @@
+{
+  "name": "صحتنا في غذائنا | تعلم عن الحساسية الغذائية",
+  "description": "موقع تعليمي وتفاعلي للأطفال والطلاب للتعرف على الحساسية الغذائية مسبباتها وكيفية التعامل معها بأسلوب ممتع.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
