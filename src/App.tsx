@@ -7,7 +7,7 @@ import Quiz from './components/Quiz';
 import FoodSortGame from './components/FoodSortGame';
 import QuickFacts from './components/QuickFacts';
 import AllergyJournal from './components/AllergyJournal';
-import { Heart } from 'lucide-react';
+import { Heart, ExternalLink } from 'lucide-react';
 
 export default function App() {
   return (
@@ -43,11 +43,41 @@ export default function App() {
       </main>
 
       <footer className="py-12 px-6 bg-slate-100 text-center rounded-t-[3rem]">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center gap-2 text-slate-500 mb-4">
+        <div className="max-w-4xl mx-auto flex flex-col items-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between w-full border-b border-slate-200 pb-6 gap-4">
+            <div className="flex items-center gap-2 text-slate-600 font-bold">
+              <span>🥗 صحتنا في غذائنا</span>
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-3">
+              <a 
+                href="https://faisal-alzahrani.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-bold rounded-xl shadow-md hover:scale-105 active:scale-95 transition-all text-sm"
+                id="diabetes-assistant-link"
+              >
+                <span>مساعدي السكري</span>
+                <ExternalLink size={16} />
+              </a>
+
+              <a 
+                href="https://falzahrani.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-brand-primary to-brand-secondary text-white font-bold rounded-xl shadow-md hover:scale-105 active:scale-95 transition-all text-sm"
+                id="achievements-link"
+              >
+                <span>لمحة لانجازاتي</span>
+                <ExternalLink size={16} />
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center gap-2 text-slate-500">
             صنع بكل <Heart className="text-red-500 fill-current" size={18} /> لأطفالنا المبدعين
           </div>
-          <p className="text-slate-400 text-sm">
+          <p className="text-slate-400 text-xs sm:text-sm max-w-2xl">
             هذا الموقع تعليمي ويهدف لنشر الوعي. في حال الطوارئ، اتصل دائماً بالإسعاف أو بوالديك.
           </p>
         </div>
