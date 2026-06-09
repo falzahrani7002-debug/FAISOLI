@@ -7,6 +7,7 @@ import Quiz from './components/Quiz';
 import FoodSortGame from './components/FoodSortGame';
 import QuickFacts from './components/QuickFacts';
 import AllergyJournal from './components/AllergyJournal';
+import RatingSystem from './components/RatingSystem';
 import { Heart, ExternalLink } from 'lucide-react';
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
           <div className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm font-bold text-slate-600">
             <a href="#details" className="hover:text-brand-primary transition-colors whitespace-nowrap">مسببات الحساسية</a>
             <a href="#quiz" className="hover:text-brand-primary transition-colors hidden xs:block">اختبر نفسك</a>
+            <a href="#rating" className="hover:text-brand-primary transition-colors whitespace-nowrap">تقييم الموقع</a>
             <a href="#game" className="bg-brand-primary px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-white hover:bg-brand-primary/90 transition-all text-xs sm:text-sm">العب</a>
           </div>
         </div>
@@ -40,6 +42,7 @@ export default function App() {
         <AllergyJournal />
         <Quiz />
         <FoodSortGame />
+        <RatingSystem />
       </main>
 
       <footer className="py-12 px-6 bg-slate-100 text-center rounded-t-[3rem]">
